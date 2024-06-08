@@ -1,0 +1,118 @@
+.App{
+  height: 100vh;
+  background-color: #0d1b2a;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.container .box {
+  width: 400px;
+  height: 90vh;
+  margin: 5vh 0;
+  padding: 1rem 1%;
+  background-color: #1b263b;
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .box .title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.container .box div strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.container .box div p {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.container .box div span {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.container .box div span:nth-child(3) {
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+.container .box:hover {
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.output_section{
+  margin-top: 5vh;
+  height: 15vh;
+  padding: 1.5vh 2.5%;
+  text-align: right;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.input_section{
+  height: 64vh;
+  /* background-color: white; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.btns_input{
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10vh;
+  background-color: white;
+  color: #333333;
+  font-size: 3vh;
+}
+
+.big_input{
+  width: 48.75%;
+}
+.input_op{
+  background-color: #ff9500;
+  color: white;
+}
+
+.input_del{
+  background-color: #ff6347;
+  color: white;
+}
+
+.pre_operand{
+  height: 4.5vh;  
+  opacity: 0.7;
+  font-size: 3.5vh;
+}
+.current_operand{
+  margin-top: 1vh;
+  height: 6.5vh;
+  font-size: 5vh;
+  color: #333333;
+}
